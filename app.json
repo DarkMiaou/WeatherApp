@@ -2,28 +2,52 @@
   "expo": {
     "name": "WeatherApp",
     "slug": "WeatherApp",
+    "entryPoint": "entry.ts",
+    "scheme": "weatherapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/splash-gradient.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1e90ff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "splash": {
+        "image": "./assets/splash-gradient.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#1e90ff"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "softwareKeyboardLayoutMode": "pan",
+      "splash": {
+        "image": "./assets/splash-gradient.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#1e90ff"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1e90ff",
+          "image": "./assets/splash-gradient.png",
+          "resizeMode": "cover"
+        }
+      ]
+    ]
   }
 }
