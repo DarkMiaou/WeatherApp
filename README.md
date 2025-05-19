@@ -18,7 +18,6 @@ A cross-platform weather app built with React Native and Expo, using Firebase Au
 - Firebase Auth + Firestore
 - OpenWeatherMap API
 - Lottie Animations
-- AsyncStorage (fallback)
 - Expo BlurView, LinearGradient, Haptics
 
 ## 🧪 How to Run
